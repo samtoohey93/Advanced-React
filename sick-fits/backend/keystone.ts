@@ -1,12 +1,14 @@
 import { createAuth } from "@keystone-next/auth";
 import { config, createSchema } from "@keystone-next/keystone/schema";
 import "dotenv/config";
+import "dotenv";
 import { User } from "./schemas/User";
 import { Product } from "./schemas/Product";
 import {
   withItemData,
   statelessSessions,
 } from "@keystone-next/keystone/session";
+import { ProductImage } from "./schemas/ProductImage";
 
 const databaseURL =
   process.env.DATABASE_URL ||
@@ -45,6 +47,7 @@ export default withAuth(
       //Schema items go here
       User,
       Product,
+      ProductImage,
     }),
     ui: {
       //Show UI for users that pass this test
