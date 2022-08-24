@@ -1,5 +1,6 @@
 import { text, password, relationship } from "@keystone-next/fields";
 import { list } from "@keystone-next/keystone/schema";
+import "dotenv/config";
 
 export const User = list({
   //access:

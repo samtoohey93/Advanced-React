@@ -1,5 +1,6 @@
-import { select, text } from "@keystone-next/fields";
+import { relationship, select, text } from "@keystone-next/fields";
 import { list } from "@keystone-next/keystone/schema";
+import "dotenv/config";
 
 export const Product = list({
   //Todo
@@ -11,6 +12,16 @@ export const Product = list({
         displayMode: "textarea",
       },
     }),
+    photo: relationship({
+      ref: "ProductImage.product",
+      ui: {
+        displayMode: "cards",
+        cardFields: ["image", "altText"],
+        inLineCreate: { fields: ["image", "altText"] },
+        inlineEdit: { fields: ["image", "altText"] },
+      },
+    }),
+
     status: select({
       options: [
         { label: "Draft", value: "Draft" },

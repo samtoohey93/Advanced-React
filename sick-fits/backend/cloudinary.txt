@@ -1,0 +1,5 @@
+cloudinary.config({ 
+  cloud_name: 'sam-toohey-web', 
+  api_key: '931443956486237', 
+  api_secret: 'NGGwfffRcHj3rJ-XFXJwB5QzdwU' 
+});
