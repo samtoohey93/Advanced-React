@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 cloudinary.config({ 
   cloud_name: 'sam-toohey-web', 
   api_key: '931443956486237', 
   api_secret: 'NGGwfffRcHj3rJ-XFXJwB5QzdwU' 
+=======
+cloudinary.config({ 
+  cloud_name: 'sam-toohey-web', 
+  api_key: '931443956486237', 
+  api_secret: 'NGGwfffRcHj3rJ-XFXJwB5QzdwU' 
+>>>>>>> cb80dae16e7a8c280e86e3ac4d3e7afd16de5632
 });
